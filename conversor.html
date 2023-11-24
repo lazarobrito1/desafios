@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversor de medidas</title>
+</head>
+
+<body>
+  <h1>Conversor de medidas</h1>
+  <input type="button" value="converter" onclick="clicar()">
+  <div id="res">
+    
+    
+  </div>
+<script>
+let c = 10
+let result = document.getElementById("res")
+
+
+function clicar(){
+    let a = prompt('Digite uma distância em metros (m)')
+    if (a >= 1000){
+    
+      a = a/1000
+      
+    }
+    result.innerHTML = `o valor em km é ${a}`
+    result.innerHTML += `<p>o valor em hectometro é ${a*c} </p>`
+
+  }
+  
+  
+</script>
+
+</body>
+
+</html>
